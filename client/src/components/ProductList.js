@@ -9,7 +9,7 @@ const ProductList = (props) => {
         return (
           <Link key={idx} to={"/product/" + product._id}>
             <ul className="list">
-              <li>{product.title}</li>
+              <li>{product.title} | <Link to ={"/product/"+product._id+"/edit"}>Edit</Link></li>
             </ul>
           </Link>
         );
